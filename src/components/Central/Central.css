@@ -1,0 +1,15 @@
+#central {
+    width: 75svw;
+    height: 85svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+
+    & h1 {
+        margin: 0;
+        padding: 1rem;
+    }
+
+
+}
