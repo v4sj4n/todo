@@ -1,1 +1,4 @@
 node_modules/
+dist/*.svg
+dist/*.png
+dist/*.js

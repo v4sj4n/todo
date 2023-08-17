@@ -1,0 +1,7 @@
+#descriptor{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: black 1px solid;
+    margin-bottom: 2rem;
+}

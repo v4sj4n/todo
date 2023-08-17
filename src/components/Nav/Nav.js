@@ -8,7 +8,7 @@ export default function Nav() {
   todo.src = todoIcon
 
   const todoTitle = document.createElement("h1")
-  todoTitle.textContent = "To-Do"
+  todoTitle.textContent = "Rupi"
   todoTitle.style.color = "#d3d3d3"
 
   navContainer.appendChild(todo)

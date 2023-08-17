@@ -14,8 +14,9 @@ nav {
         width: 2.5rem;
     }
 
-    &>h1 {
+    & h1 {
         color: #d3d3d3;
-        margin: 0;
+        /* margin: 0; */
+        margin: 0.5rem ;
     }
 }
