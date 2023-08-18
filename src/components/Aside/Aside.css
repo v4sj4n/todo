@@ -3,11 +3,23 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: #d3d3d3;
-    height: 85vh;
-    width: 25svw;
+    height: 85svh;
+    width: 20svw;
     padding-top: 5rem;
     padding-bottom: 5rem;   
     
 }
+
+
+@media (max-width: 800px) {
+    aside{
+        height: 8svh;
+        width: 100svw;
+        /* flex-direction: row; */
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;  
+    }
+  }

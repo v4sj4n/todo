@@ -20,3 +20,9 @@ nav {
         margin: 0.5rem ;
     }
 }
+
+@media (max-width: 800px) {
+    nav{
+        flex-direction: row;
+    }
+  }

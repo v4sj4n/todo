@@ -1,5 +1,5 @@
 #central {
-    width: 75svw;
+    width: 80svw;
     height: 85svh;
     display: flex;
     flex-direction: column;
@@ -13,3 +13,10 @@
 
 
 }
+
+@media (max-width: 800px) {
+    #central{
+        height: calc(100svh - 15svh - 8svh);
+        width: 100%; 
+    }
+  }

@@ -1,6 +1,8 @@
 import "./Period.css"
 
 export default function Period(title, src) {
+  const main = document.querySelector('main')
+  
   const periodContainer = document.createElement("div")
   periodContainer.setAttribute("class", "period")
 
@@ -12,6 +14,13 @@ export default function Period(title, src) {
 
   periodContainer.appendChild(periodImage)
   periodContainer.appendChild(periodTitle)
+
+  periodContainer.addEventListener('click', () =>{
+    console.log(main.childNodes)
+
+
+
+  })
 
   return periodContainer
 }

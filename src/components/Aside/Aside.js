@@ -1,8 +1,12 @@
 import "./Aside.css"
 import Periods from "../Periods/Periods"
 
-export default function AsideDiv() {
+export default function Aside() {
+  
   const asideContainer = document.createElement("aside")
+
+
+  
 
   asideContainer.appendChild(Periods())
 

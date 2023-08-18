@@ -5,6 +5,7 @@ import weekIcon from "../../images/icons/week.svg"
 import todayIcon from "../../images/icons/today.svg"
 
 import Period from "../Period/Period"
+import "./Periods.css"
 
 
 const periods = [
