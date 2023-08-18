@@ -11,12 +11,12 @@ export default function TodoCreator() {
   datePicker.setAttribute("id", "input-todo-date")
 
   const inputTitle = document.createElement("input")
-  inputTitle.setAttribute("placeholder", "enter a title")
+  inputTitle.setAttribute("placeholder", "title")
   inputTitle.setAttribute("id", "input-todo-title")
   inputTitle.setAttribute("type", "text")
 
   const inputDesc = document.createElement("input")
-  inputDesc.setAttribute("placeholder", "enter a description")
+  inputDesc.setAttribute("placeholder", "description")
   inputDesc.setAttribute("type", "text")
   inputDesc.setAttribute("id", "input-todo-desc")
 

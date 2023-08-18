@@ -4,6 +4,7 @@ import TodoCreator from "../TodoCreator/TodoCreator"
 import { todosList } from "../../utilities/todosData"
 import { isThisMonth, isThisWeek, isToday, parseISO } from "date-fns"
 todosList
+import "./Todos.css"
 
 export default function Todos(period = "inbox") {
   const todosContainer = document.createElement("div")

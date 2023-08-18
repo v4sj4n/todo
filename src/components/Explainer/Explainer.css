@@ -1,8 +1,30 @@
 #descriptor{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     border-bottom: black 1px solid;
     margin-bottom: 2rem;
     justify-content: space-between;
 }
+
+@media (max-width: 800px) {
+    #descriptor{
+       & h3{
+        font-size: 1.2rem;
+       } 
+       & p{
+        font-size: 0.85rem;
+       }
+        
+    }
+  }
+@media (max-width: 400px) {
+    #descriptor{
+       & h3{
+        font-size: 1rem;
+       } 
+       & p{
+        font-size: 0.75rem;
+       }
+        
+    }
+  }
