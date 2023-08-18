@@ -1,27 +1,48 @@
 import Todo from "../Todo/Todo"
 import Explainer from "../Explainer/Explainer"
 import TodoCreator from "../TodoCreator/TodoCreator"
-import PeriodShower from "../../PeriodShower"
+import { todosList } from "../../utilities/todosData"
+import { isThisMonth, isThisWeek, isToday, parseISO } from "date-fns"
+todosList
 
-
-import { todosList } from "../../todosData"
-
-
-
-export default function Todos() {
+export default function Todos(period = "inbox") {
   const todosContainer = document.createElement("div")
-  todosContainer.setAttribute('id', 'todos-container')
+  todosContainer.setAttribute("id", "todos-container")
   todosContainer.appendChild(Explainer())
   todosContainer.appendChild(TodoCreator())
+  let listToIterate
 
-  todosList.forEach((todo) => {
-    const { title, description, isDone, date } = todo
-    const formattedDate = PeriodShower(date)
-    const todoEl = Todo(title, description, isDone, formattedDate)
+
+  switch (period) {
+    case "inbox":
+      listToIterate = todosList
+      break
+    case "today":
+      listToIterate = todosList.filter((todo) => isToday(parseISO(todo.date)))
+      break
+    case "this week":
+      listToIterate = todosList.filter((todo) =>
+        isThisWeek(parseISO(todo.date))
+      )
+      break
+    case "this month":
+      listToIterate = todosList.filter((todo) =>
+        isThisMonth(parseISO(todo.date))
+      )
+      break
+
+    default:
+      listToIterate = todosList
+      break
+  }
+
+  listToIterate.forEach((todo) => {
+    const { title, description, checkbox, date } = todo
+
+    const todoEl = Todo(title, description, checkbox, date)
 
     todosContainer.appendChild(todoEl)
   })
-  document.addEventListener("todosUpdated", Todos);
 
   return todosContainer
 }

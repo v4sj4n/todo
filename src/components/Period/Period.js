@@ -1,7 +1,7 @@
 import "./Period.css"
+import Central from "../Central/Central"
 
 export default function Period(title, src) {
-  const main = document.querySelector('main')
   
   const periodContainer = document.createElement("div")
   periodContainer.setAttribute("class", "period")
@@ -16,7 +16,11 @@ export default function Period(title, src) {
   periodContainer.appendChild(periodTitle)
 
   periodContainer.addEventListener('click', () =>{
-    console.log(main.childNodes)
+    const main = document.querySelector('main')
+    const centralDiv = document.querySelector('#central')
+    main.removeChild(centralDiv)
+    main.appendChild(Central(title))
+
 
 
 

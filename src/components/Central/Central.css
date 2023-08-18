@@ -9,6 +9,7 @@
     & h1 {
         margin: 0;
         padding: 1rem;
+        text-transform: capitalize;
     }
 
 
@@ -17,6 +18,6 @@
 @media (max-width: 800px) {
     #central{
         height: calc(100svh - 15svh - 8svh);
-        width: 100%; 
+        width: 80svw; 
     }
   }

@@ -1,7 +1,7 @@
 import "./Central.css"
 import Todos from "../Todos/Todos"
 
-export default function Central(title = "Inbox") {
+export default function Central(title = "inbox") {
   const centralContainer = document.createElement("div")
   centralContainer.setAttribute("id", "central")
 
@@ -9,7 +9,7 @@ export default function Central(title = "Inbox") {
   categoryText.textContent = title
 
   centralContainer.appendChild(categoryText)
-  centralContainer.appendChild(Todos())
+  centralContainer.appendChild(Todos(title))
 
   return centralContainer
 }

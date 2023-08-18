@@ -8,8 +8,15 @@
     padding: 1rem;
     border-radius: 1rem;
 
-    & img{
+    & img {
         width: 2rem;
         cursor: pointer;
     }
+    & input[type="text"]{
+        background-color: rgb(255, 255, 255);
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
 }

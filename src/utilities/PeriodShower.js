@@ -6,7 +6,7 @@ export default function PeriodShower(date){
     if (isToday(parsedDate)){
         return "Today"
     } else if (isThisWeek(parsedDate)){
-        return "This week"
+        return format(parsedDate, "eeee")
     } else if (isThisMonth(parsedDate)){
         return "This month"
     } else {

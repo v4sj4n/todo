@@ -12,8 +12,8 @@ const periods = [
   { title: "inbox", src: inboxIcon },
   { title: "today", src: todayIcon },
   { title: "this week", src: weekIcon },
-  { title: "this month", src: monthIcon },
-  { title: "projects", src: projectsIcon },
+  { title: "this month", src: monthIcon }
+  // { title: "projects", src: projectsIcon },
 ]
 
 export default function PeriodsContainer() {

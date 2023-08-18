@@ -1,8 +1,6 @@
-import { parseISO } from "date-fns"
-import { todosList } from "../../todosData"
+import { todosList } from "../../utilities/todosData"
 import Todo from "../Todo/Todo"
 import "./TodoCreator.css"
-import PeriodShower from "../../PeriodShower"
 
 export default function TodoCreator() {
   const inputsContainers = document.createElement("form")
@@ -30,9 +28,8 @@ export default function TodoCreator() {
     const title = inputTitle.value
     const description = inputDesc.value
     const checkbox = false
-    const date = datePicker.value ? PeriodShower(datePicker.value): ""
+    const date = datePicker.value ? datePicker.value: ""
 
-    console.log({ title, description, checkbox, date })
 
     if (title != "") {
       todosList.push({ title, description, checkbox, date })

@@ -26,3 +26,9 @@ nav {
         flex-direction: row;
     }
   }
+@media (max-width: 400px) {
+    nav{
+        /* width: 100svw; */
+        flex-direction: row;
+    }
+  }
