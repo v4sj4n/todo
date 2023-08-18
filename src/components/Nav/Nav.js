@@ -9,7 +9,7 @@ export default function Nav() {
 
   const todoTitle = document.createElement("h1")
   todoTitle.textContent = "Rupi"
-  todoTitle.style.color = "#d3d3d3"
+  todoTitle.style.color = "#f5f0f0"
 
   navContainer.appendChild(todo)
   navContainer.appendChild(todoTitle)
