@@ -1,50 +1,54 @@
-#creator-div{
+#creator-div {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 15svw;
+  margin-right: 15svw;
+
+  & input[type='text'],
+  input[type='date'] {
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  & button {
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media (max-width: 800px) {
+  #creator-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
-    & input[type="text"], input[type="date"]{
-        background-color: #d3d3d3;
-        border: none;
-        border-radius: 0.5rem;
+    & input[type='text'] {
+      background-color: #d3d3d3;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 0.75rem;
+      text-align: center;
+      text-overflow: ellipsis;
+      padding: 1rem;
     }
-    & button{
-        border-radius: 0.5rem;
-        border: none;
-        cursor: pointer;
+
+    & input[type='date'] {
+      text-align: center;
     }
-    
-}
-@media (max-width: 800px) {
-    #creator-div{
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    
-        & input[type="text"]{
-            background-color: #d3d3d3;
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 0.75rem;
-            text-align: center;
-            text-overflow: ellipsis;
-            padding: 1rem;
-
-        }
-
-        & input[type="date"]{
-            text-align: center;
-        }
-        & button{
-            padding: 1rem;
-            border-radius: 0.5rem;
-            border: none;
-            cursor: pointer;
-        }
-        
+    & button {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
     }
   }
+}
